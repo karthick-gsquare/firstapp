@@ -4,6 +4,7 @@ import Home from "../pages/home/Home";
 import { Route, Routes } from "react-router";
 import ClientPublic from "./ClientPublic";
 import ClientPrivate from "./ClientPrivate";
+import FlowChart from "../pages/flowchart/FlowChart";
 
 function MainRouter() {
   return (
@@ -24,9 +25,10 @@ function MainRouter() {
           </ClientPrivate>
         }
       /> */}
-      <Route path="/" element={<Home/>}>
+      <Route path="/" element={<Home />} />
+      <Route path="/flowchart" element={<FlowChart />} />
+      <Route path="*" element={<Home />} />
 
-      </Route>
     </Routes>
   );
 }
