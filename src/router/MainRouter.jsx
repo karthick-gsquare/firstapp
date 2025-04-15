@@ -5,6 +5,7 @@ import { Route, Routes } from "react-router";
 import ClientPublic from "./ClientPublic";
 import ClientPrivate from "./ClientPrivate";
 import FlowChart from "../pages/flowchart/FlowChart";
+import PdfPage from "../pages/pdf/PdfPage";
 
 function MainRouter() {
   return (
@@ -27,6 +28,7 @@ function MainRouter() {
       /> */}
       <Route path="/" element={<Home />} />
       <Route path="/flowchart" element={<FlowChart />} />
+      <Route path="/pdf" element={<PdfPage />} />
       <Route path="*" element={<Home />} />
 
     </Routes>
